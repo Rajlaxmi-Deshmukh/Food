@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Contact Us - E-Shop</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f8f8f8;
+    }
+
+    .header {
+      background-color: #ff6347;
+      color: black;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      padding: 40px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .contact-info, .contact-form {
+      flex: 1;
+      min-width: 300px;
+      padding: 20px;
+      background: white;
+      margin: 10px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.05);
+    }
+
+    .contact-info h2, .contact-form h2 {
+      margin-bottom: 20px;
+    }
+
+    .contact-info p {
+      margin: 10px 0;
+      color: #555;
+    }
+
+    .contact-form input[type=text],
+    .contact-form input[type=email],
+    .contact-form textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 16px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+
+    .contact-form input[type=submit] {
+      background-color: #ff9900;
+      color: white;
+      padding: 14px;
+      border: none;
+      border-radius: 4px;
+      width: 100%;
+      cursor: pointer;
+      font-size: 16px;
+    }
+
+    .contact-form input[type=submit]:hover {
+      background-color: #e68a00;
+    }
+
+    .map {
+      width: 100%;
+      height: 300px;
+      background: #ddd;
+      margin-top: 20px;
+      border-radius: 8px;
+    }
+
+    @media (max-width: 768px) {
+      .container {
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="header">
+    <h1>Contact E-Shop</h1>
+    <p>We’re here to help! Reach out to our team anytime.</p>
+  </div>
+
+  <div class="container">
+
+    <div class="contact-info">
+      <h2>Contact Information</h2>
+      <p><strong>Email:</strong> TastyBite@eshop.com</p>
+      <p><strong>Phone:</strong> +91 1234567890</p>
+      <p><strong>Address:</strong>  Market Street, Pandharpur, 413304</p>
+      <p><strong>Hours:</strong> Mon–Fri, 9am–6pm</p>
+    </div>
+
+    <div class="contact-form">
+      <h2>Send Us a Message</h2>
+      <form action="mailto:support@eshop.com" method="post" enctype="text/plain">
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <input type="text" name="subject" placeholder="Subject" required>
+        <textarea name="message" rows="6" placeholder="Your Message..." required></textarea>
+        <input type="submit" value="Send Message">
+      </form>
+    </div>
+
+  </div>
+
+</body>
+</html>
